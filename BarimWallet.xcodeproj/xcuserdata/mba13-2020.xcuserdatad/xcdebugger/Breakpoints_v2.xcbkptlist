@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9B8D1102-60D6-4643-8B6D-A900CE4D35F4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "786F9205-8BC2-4612-BDB8-75798B4AC129"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/AppNavigationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AppNavigationView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "786F9205-8BC2-4612-BDB8-75798B4AC129 - 507bfdc5b8bb5f49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of BarimWallet.AppNavigationView.(selection in _050D23B1AE9A3A3EFA9CEBDFEEE4B1DA) : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "786F9205-8BC2-4612-BDB8-75798B4AC129 - 1523ef9d2f3c0d71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarimWallet.AppNavigationView.init() -&gt; BarimWallet.AppNavigationView"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBC8B7D7-B24D-4438-9F91-D71ACE0D1E4A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/AppTabNavigationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AppTabNavigationView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "DBC8B7D7-B24D-4438-9F91-D71ACE0D1E4A - e564ce0014f5d15b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarimWallet.AppTabNavigationView.selection.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppTabNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "DBC8B7D7-B24D-4438-9F91-D71ACE0D1E4A - 99d765a8960f8147"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarimWallet.AppTabNavigationView.selection.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppTabNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "DBC8B7D7-B24D-4438-9F91-D71ACE0D1E4A - dc29845d9ad84339"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarimWallet.AppTabNavigationView.selection.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppTabNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "DBC8B7D7-B24D-4438-9F91-D71ACE0D1E4A - 7531b37f4e1fb111"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarimWallet.AppTabNavigationView.selection.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppTabNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "DBC8B7D7-B24D-4438-9F91-D71ACE0D1E4A - a4d196bc3b79b0dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarimWallet.AppTabNavigationView.$selection.getter : SwiftUI.Binding&lt;Swift.Optional&lt;Swift.String&gt;&gt;"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppTabNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "770301D0-A3D7-44AC-B87C-856F9DB86B31"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shared/AppSidebarNavigationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AppSidebarNavigationView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "770301D0-A3D7-44AC-B87C-856F9DB86B31 - 749e8ef79b66d49b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarimWallet.AppSidebarNavigationView.selection.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppSidebarNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "770301D0-A3D7-44AC-B87C-856F9DB86B31 - b10c202d6aac6497"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarimWallet.AppSidebarNavigationView.selection.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppSidebarNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "770301D0-A3D7-44AC-B87C-856F9DB86B31 - 3fafcc6ab1dd7335"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarimWallet.AppSidebarNavigationView.selection.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppSidebarNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "770301D0-A3D7-44AC-B87C-856F9DB86B31 - 5cf5f0fb7d5325ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarimWallet.AppSidebarNavigationView.selection.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppSidebarNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "770301D0-A3D7-44AC-B87C-856F9DB86B31 - 4026c55e96ce0bfe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BarimWallet.AppSidebarNavigationView.$selection.getter : SwiftUI.Binding&lt;Swift.Optional&lt;Swift.String&gt;&gt;"
+                  moduleName = "BarimWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mba13-2020/Developer/Product/BarimWallet/Shared/AppSidebarNavigationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

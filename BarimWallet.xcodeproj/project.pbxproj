@@ -21,6 +21,18 @@
 		C62E4A6D25D6D87700E60E02 /* ReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E4A6B25D6D87700E60E02 /* ReceiveView.swift */; };
 		C663B5CB25DACDAF002E06A8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5CA25DACDAF002E06A8 /* AccountView.swift */; };
 		C663B5CC25DACDAF002E06A8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5CA25DACDAF002E06A8 /* AccountView.swift */; };
+		C663B5D925DACE56002E06A8 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5D825DACE56002E06A8 /* Wallet.swift */; };
+		C663B5DA25DACE56002E06A8 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5D825DACE56002E06A8 /* Wallet.swift */; };
+		C663B5DE25DACE5C002E06A8 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5DD25DACE5C002E06A8 /* Account.swift */; };
+		C663B5DF25DACE5C002E06A8 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5DD25DACE5C002E06A8 /* Account.swift */; };
+		C663B5E325DD5C94002E06A8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5E225DD5C94002E06A8 /* Transaction.swift */; };
+		C663B5E425DD5C94002E06A8 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5E225DD5C94002E06A8 /* Transaction.swift */; };
+		C663B5E825DFA3B3002E06A8 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5E725DFA3B3002E06A8 /* Blockchain.swift */; };
+		C663B5E925DFA3B3002E06A8 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5E725DFA3B3002E06A8 /* Blockchain.swift */; };
+		C663B5EF25E0C9DE002E06A8 /* BitcoinCash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5EE25E0C9DE002E06A8 /* BitcoinCash.swift */; };
+		C663B5F025E0C9DE002E06A8 /* BitcoinCash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5EE25E0C9DE002E06A8 /* BitcoinCash.swift */; };
+		C663B5F925E1313F002E06A8 /* UInt+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5F825E1313F002E06A8 /* UInt+.swift */; };
+		C663B5FA25E1313F002E06A8 /* UInt+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5F825E1313F002E06A8 /* UInt+.swift */; };
 		C6F4221925CFD22D00884294 /* BarimWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4220625CFD22D00884294 /* BarimWalletApp.swift */; };
 		C6F4221A25CFD22D00884294 /* BarimWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4220625CFD22D00884294 /* BarimWalletApp.swift */; };
 		C6F4221D25CFD22D00884294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F4220825CFD22D00884294 /* Assets.xcassets */; };
@@ -35,6 +47,12 @@
 		C62E4A6625D6D87000E60E02 /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 		C62E4A6B25D6D87700E60E02 /* ReceiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveView.swift; sourceTree = "<group>"; };
 		C663B5CA25DACDAF002E06A8 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		C663B5D825DACE56002E06A8 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		C663B5DD25DACE5C002E06A8 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		C663B5E225DD5C94002E06A8 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		C663B5E725DFA3B3002E06A8 /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
+		C663B5EE25E0C9DE002E06A8 /* BitcoinCash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinCash.swift; sourceTree = "<group>"; };
+		C663B5F825E1313F002E06A8 /* UInt+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt+.swift"; sourceTree = "<group>"; };
 		C6F4220625CFD22D00884294 /* BarimWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarimWalletApp.swift; sourceTree = "<group>"; };
 		C6F4220825CFD22D00884294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6F4220D25CFD22D00884294 /* BarimWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarimWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +104,11 @@
 		C62E4A6025D6C09F00E60E02 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C663B5E725DFA3B3002E06A8 /* Blockchain.swift */,
+				C663B5EE25E0C9DE002E06A8 /* BitcoinCash.swift */,
+				C663B5D825DACE56002E06A8 /* Wallet.swift */,
+				C663B5DD25DACE5C002E06A8 /* Account.swift */,
+				C663B5E225DD5C94002E06A8 /* Transaction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +138,14 @@
 			path = Receive;
 			sourceTree = "<group>";
 		};
+		C663B5F725E13124002E06A8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C663B5F825E1313F002E06A8 /* UInt+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		C6F4220025CFD22D00884294 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +159,7 @@
 		C6F4220525CFD22D00884294 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C663B5F725E13124002E06A8 /* Extension */,
 				C6F4220625CFD22D00884294 /* BarimWalletApp.swift */,
 				C62E4A6025D6C09F00E60E02 /* Model */,
 				C62E4A5F25D6C09A00E60E02 /* View */,
@@ -259,13 +291,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C663B5E325DD5C94002E06A8 /* Transaction.swift in Sources */,
 				C62E4A5625D66AFD00E60E02 /* AppTabNavigationView.swift in Sources */,
 				C62E4A6C25D6D87700E60E02 /* ReceiveView.swift in Sources */,
 				C62E4A6225D6D68B00E60E02 /* WalletView.swift in Sources */,
 				C62E4A6725D6D87000E60E02 /* SendView.swift in Sources */,
+				C663B5E825DFA3B3002E06A8 /* Blockchain.swift in Sources */,
 				C663B5CB25DACDAF002E06A8 /* AccountView.swift in Sources */,
+				C663B5DE25DACE5C002E06A8 /* Account.swift in Sources */,
 				C62E4A5125D66AF300E60E02 /* AppSidebarNavigationView.swift in Sources */,
+				C663B5F925E1313F002E06A8 /* UInt+.swift in Sources */,
+				C663B5D925DACE56002E06A8 /* Wallet.swift in Sources */,
 				C6F4221925CFD22D00884294 /* BarimWalletApp.swift in Sources */,
+				C663B5EF25E0C9DE002E06A8 /* BitcoinCash.swift in Sources */,
 				C62E4A4A25D6693300E60E02 /* AppNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,13 +312,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C663B5E425DD5C94002E06A8 /* Transaction.swift in Sources */,
 				C62E4A5725D66AFD00E60E02 /* AppTabNavigationView.swift in Sources */,
 				C62E4A6D25D6D87700E60E02 /* ReceiveView.swift in Sources */,
 				C62E4A6325D6D68B00E60E02 /* WalletView.swift in Sources */,
 				C62E4A6825D6D87000E60E02 /* SendView.swift in Sources */,
+				C663B5E925DFA3B3002E06A8 /* Blockchain.swift in Sources */,
 				C663B5CC25DACDAF002E06A8 /* AccountView.swift in Sources */,
+				C663B5DF25DACE5C002E06A8 /* Account.swift in Sources */,
 				C62E4A5225D66AF300E60E02 /* AppSidebarNavigationView.swift in Sources */,
+				C663B5FA25E1313F002E06A8 /* UInt+.swift in Sources */,
+				C663B5DA25DACE56002E06A8 /* Wallet.swift in Sources */,
 				C6F4221A25CFD22D00884294 /* BarimWalletApp.swift in Sources */,
+				C663B5F025E0C9DE002E06A8 /* BitcoinCash.swift in Sources */,
 				C62E4A4B25D6693300E60E02 /* AppNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

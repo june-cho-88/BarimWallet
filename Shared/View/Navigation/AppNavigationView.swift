@@ -50,7 +50,7 @@ struct AppNavigationView: View {
         @ViewBuilder var view: some View {
             switch self {
             case .wallet:
-                WalletView()
+                WalletView(wallet: .sample)
             case .send:
                 SendView()
             case .receive:

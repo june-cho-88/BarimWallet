@@ -8,41 +8,57 @@
 import SwiftUI
 
 struct WalletView: View {
-    @State private var showBalance: Bool = false
+    let wallet: Wallet
+    
+    @State private var showBalance: Bool = true
+    @State private var showInSatoshi: Bool = false
     @State private var presentAddAcountView: Bool = false
     
     var body: some View {
         NavigationView {
             List {
-                WalletListRowView(showBalance: $showBalance)
+                ForEach(wallet.accounts) {
+                    WalletListRowView(account: $0,
+                                      showBalance: $showBalance,
+                                      showInSatoshi: $showInSatoshi)
+                }
             }
             .listStyle(DefaultListStyle())
             .navigationTitle("Wallet")
             .navigationBarItems(leading:
-                                    Button(action: { showBalance.toggle() }) {
-                                        Image(systemName: (showBalance ? "eye.fill" : "eye"))
-                                    }.disabled(true),
+                                    HStack {
+                                        Button(action: { showBalance.toggle() }) {
+                                            Image(systemName: (showBalance ? "eye.fill" : "eye"))
+                                        }.disabled(wallet.accounts.isEmpty)
+                                        Button(action: { showInSatoshi.toggle() }) {
+                                            Image(systemName: (showInSatoshi ? "s.circle" : "bitcoinsign.circle.fill"))
+                                        }.disabled(!showBalance).opacity(showBalance ? 1.0 : 0.0)
+                                    },
                                 trailing:
                                     Button(action: { presentAddAcountView = true }) {
                                         Image(systemName: "plus")
-                                    }.sheet(isPresented: $presentAddAcountView) { AddAccountView(presentAddAcountView: $presentAddAcountView) }
-            )
-        }
+                                    }.sheet(isPresented: $presentAddAcountView) { AddAccountView(presentAddAcountView: $presentAddAcountView) } )
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
 struct WalletListRowView: View {
+    let account: Account
+    
     @Binding var showBalance: Bool
+    @Binding var showInSatoshi: Bool
     
     var body: some View {
-        NavigationLink(destination: AccountView()) {
+        NavigationLink(destination: AccountView(account: account,
+                                                showBalance: $showBalance,
+                                                showInSatoshi: $showInSatoshi)) {
             HStack {
-                Text("My Account")
+                Text(account.name)
                 Spacer()
                 VStack(alignment: .trailing) {
-                    Text("Balance")
+                    Text(showInSatoshi ? account.balance.satoshi : account.balance.bch)
                         .font(.system(.subheadline, design: .monospaced))
-                    Text("BCH")
+                    Text(showInSatoshi ? "satoshi" : "BCH")
                         .font(.system(.caption2))
                         .foregroundColor(.secondary)
                 }.redacted(reason: showBalance ? .init() : .placeholder)
@@ -53,7 +69,7 @@ struct WalletListRowView: View {
 
 struct AddAccountView: View {
     @Binding var presentAddAcountView: Bool
-    @State private var accountName = ""
+    @State private var accountName: String = ""
     
     var body: some View {
         VStack {

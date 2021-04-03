@@ -14,8 +14,8 @@ struct AppSidebarNavigationView: View {
     
     var body: some View {
         NavigationView {
-            sidebar
-                .navigationTitle("Barim")
+            sidebar.navigationTitle("Barim")
+            //WalletView(wallet: Wallet.sample)
             noSelection
         }
     }

@@ -14,14 +14,14 @@ struct AppNavigationView: View {
     var body: some View {
         #if os(iOS)
         if horizontalSizeClass == .compact {
-            // MARK: - iPhone
+            // iPhone
             AppTabNavigationView()
         } else {
-            // MARK: - iPad
+            // iPad
             AppSidebarNavigationView()
         }
         #else
-        // MARK: - Mac
+        // Mac
         AppSidebarNavigationView()
         #endif
     }

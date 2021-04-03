@@ -30,6 +30,12 @@ extension Transaction: Comparable {
     static func < (lhs: Transaction, rhs: Transaction) -> Bool { lhs.locktime < rhs.locktime }
 }
 
+extension Transaction {
+    enum Kind {
+        case input, output
+    }
+}
+
 // MARK: - Functions
 extension Transaction {
     static func createRandomOutputs(count: Int) -> Set<Transaction.Output> {

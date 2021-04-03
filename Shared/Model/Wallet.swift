@@ -12,9 +12,12 @@ struct Wallet: Identifiable {
     let accounts: [Account]
 }
 
+extension Wallet: Hashable {}
+
 extension Wallet {
     static let sample: Wallet = .init(accounts: Account.samples)
 }
+
 
 // MARK: - Functions
 extension Wallet {}

@@ -7,17 +7,20 @@
 
 import Foundation
 
-struct Account: Identifiable {
+struct Account: Identifiable, Hashable {
     let id: UUID = .init()
     let name: String
     let privateKeys: Set<UUID>
     let transactions: Set<Transaction>
     var balance: UInt {
-        var totalValue: UInt = 0
+        let totalValue: UInt = 123456789
         
-        for privateKey in privateKeys {
-            totalValue += (BitcoinCash.shared.utxoSet.filter{$0.id==privateKey})[0].value
-        }
+        // TODO: Put this calculation to background
+//        DispatchQueue.main.async {
+//            for privateKey in privateKeys {
+//                totalValue += (BitcoinCash.shared.utxoSet.filter{$0.id==privateKey})[0].value
+//            }
+//        }
         
         return totalValue
     }

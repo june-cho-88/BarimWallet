@@ -27,24 +27,24 @@ struct AccountView: View {
             
             Section(header: Text("Transaction")) {
                 //ForEach(account.transactions.sorted()) {}
-                ForEach(0...99, id: \.self) { _ in transactionRow }
+                ForEach(0...99, id: \.self) { _ in
+                    NavigationLink(destination: TransactionView()) {
+                        transactionRow
+                    }
+                }
             }
         }
         .listStyle(GroupedListStyle())
-        .navigationBarItems(trailing: Button(action: { weekly.toggle() }) { Text(weekly ? "Weekly" : "Monthly") })
         .navigationTitle(Text(account.name))
     }
     
     var balanceRow: some View {
         HStack {
-            HStack(alignment: .bottom, spacing: 3) {
-                Text(showInSatoshi ? account.balance.satoshi : account.balance.bch)
-                    .font(.system(.callout, design: .monospaced))
-                    .fontWeight(.semibold)
-                Text(showInSatoshi ? "satoshi" : "BCH")
-                    .font(.system(.caption))
-                    .foregroundColor(.secondary)
-            }.redacted(reason: showBalance ? .init() : .placeholder)
+            ValueView(showInSatoshi: $showInSatoshi,
+                      direction: .horizontal,
+                      size: .small,
+                      balance: account.balance)
+                .redacted(reason: showBalance ? .init() : .placeholder)
             Spacer()
             Image(systemName: (showBalance ? "eye.fill" : "eye"))
                 .foregroundColor(.secondary)

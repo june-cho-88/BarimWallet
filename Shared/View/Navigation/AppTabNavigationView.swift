@@ -15,7 +15,8 @@ struct AppTabNavigationView: View {
     var body: some View {
         TabView(selection: $selection) {
             ForEach(navigationItems, id: \.self) { item in
-                item.view
+                NavigationView { item.view }
+                    .navigationViewStyle(StackNavigationViewStyle())
                     .tabItem { item.label }
                     .tag(item)
             }

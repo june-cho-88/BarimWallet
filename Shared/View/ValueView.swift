@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct ValueView: View {
-    @Binding var showInSatoshi: Bool
-    
     let direction: Direction
     let size: Size
     
-    let balance: UInt
+    let value: Value
     
     var valueFont: Font {
         switch (direction, size) {
@@ -42,23 +40,23 @@ struct ValueView: View {
     
     var verticalView: some View {
         VStack(alignment: .trailing) {
-            Text(showInSatoshi ? balance.satoshi : balance.bch)
+            Text(value.description)
                 .font(valueFont)
                 .fontWeight(.none)
                 .foregroundColor(.primary)
-            Text(showInSatoshi ? "satoshi" : "BCH")
+            Text(value.representation.description)
                 .font(currencyFont)
                 .foregroundColor(.secondary)
         }
     }
     
     var horizontalView: some View {
-        HStack(alignment: .bottom, spacing: 3) {
-            Text(showInSatoshi ? balance.satoshi : balance.bch)
+        HStack(alignment: .firstTextBaseline, spacing: 3) {
+            Text(value.description)
                 .font(valueFont)
                 .fontWeight(.semibold)
                 .foregroundColor(.primary)
-            Text(showInSatoshi ? "satoshi" : "BCH")
+            Text(value.representation.description)
                 .font(currencyFont)
                 .foregroundColor(.secondary)
         }

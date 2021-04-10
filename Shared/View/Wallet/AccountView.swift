@@ -11,7 +11,7 @@ struct AccountView: View {
     let account: Account
     
     @Binding var showBalance: Bool
-    @Binding var showInSatoshi: Bool
+    @Binding var selectedCurrency: Value.Representation
     @State private var weekly: Bool = true
     
     var body: some View {
@@ -28,7 +28,7 @@ struct AccountView: View {
             Section(header: Text("Transaction")) {
                 //ForEach(account.transactions.sorted()) {}
                 ForEach(0...99, id: \.self) { _ in
-                    NavigationLink(destination: TransactionView()) {
+                    NavigationLink(destination: TransactionView(selectedCurrency: $selectedCurrency)) {
                         transactionRow
                     }
                 }
@@ -36,19 +36,27 @@ struct AccountView: View {
         }
         .listStyle(GroupedListStyle())
         .navigationTitle(Text(account.name))
+        .navigationBarItems(trailing:
+                                Button(action: { showBalance.toggle() }) {
+                                    Image(systemName: (showBalance ? "eye.fill" : "eye"))
+                                }
+        )
     }
     
     var balanceRow: some View {
         HStack {
-            ValueView(showInSatoshi: $showInSatoshi,
-                      direction: .horizontal,
+            ValueView(direction: .horizontal,
                       size: .small,
-                      balance: account.balance)
+                      value: .init(account.balance, representation: selectedCurrency))
                 .redacted(reason: showBalance ? .init() : .placeholder)
+            
             Spacer()
-            Image(systemName: (showBalance ? "eye.fill" : "eye"))
-                .foregroundColor(.secondary)
-                .onTapGesture { showBalance.toggle() }
+            
+            Button(action: { selectedCurrency.toggle() }) {
+                Image(systemName: selectedCurrency.buttonImageName)
+            }
+            .disabled(!showBalance).opacity(showBalance ? 1.0 : 0.0)
+            .buttonStyle(BorderlessButtonStyle())
         }
     }
     
@@ -73,12 +81,12 @@ struct AccountView: View {
             }
             Spacer()
             VStack(alignment: .trailing) {
-                Text(showInSatoshi ? account.balance.satoshi : account.balance.bch)
+                Text(account.getBalance(in: selectedCurrency))
                     .font(.system(.subheadline, design: .monospaced))
-                Text(showInSatoshi ? "satoshi" : "BCH")
+                Text(selectedCurrency.description)
                     .font(.system(.caption2))
                     .foregroundColor(.secondary)
-            }
+            }.redacted(reason: showBalance ? .init() : .placeholder)
         }.lineLimit(1)
     }
 }

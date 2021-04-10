@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TransactionView: View {
+    @Binding var selectedCurrency: Value.Representation
     @State private var inputOrOutputSelector: Transaction.Kind = .input
     
     var body: some View {
@@ -23,19 +24,24 @@ struct TransactionView: View {
                             .foregroundColor(.red)
                     }
                     HStack(alignment: .bottom, spacing: 3) {
-                        Text(String(format: "%.8f", Double(UInt.random(in: 0 ... 100_00000000)) / 100_000_000))
-                            .font(.system(.subheadline, design: .monospaced))
-                        Text("BCH")
-                            .font(.system(.caption))
-                            .foregroundColor(.secondary)
+                        ValueView(direction: .horizontal,
+                                  size: .small,
+                                  value: .init(UInt.random(in: 1 ... 100_00000000), representation: selectedCurrency))
+                        
+                        Spacer()
+                        
+                        Button(action: { selectedCurrency.toggle() }) {
+                            Image(systemName: selectedCurrency.buttonImageName)
+                        }
+                        .buttonStyle(BorderlessButtonStyle())
                     }
                 }
                 HStack {
                     Image(systemName: "f.square")
                     HStack(alignment: .bottom, spacing: 3) {
-                        Text(String(format: "%.0f", Double(UInt.random(in: 0 ... 0_00001000))))
+                        Text(String(format: "%.0f", Double(UInt.random(in: 1 ... 0_00001000))))
                             .font(.system(.subheadline, design: .monospaced))
-                        Text("satoshis")
+                        Text("satoshi")
                             .font(.system(.caption))
                     }
                     Spacer()
@@ -69,7 +75,7 @@ struct TransactionView: View {
                         .foregroundColor(.secondary)
                         Text("2020-09-01 23:50:33")
                             .font(.subheadline)
-                            .fontWeight(.medium)
+                            .fontWeight(.bold)
                     }
                 }
             }.lineLimit(1)

@@ -21,12 +21,18 @@
 		C6182E9A2612C061006D0F04 /* SlideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182E982612C061006D0F04 /* SlideBar.swift */; };
 		C6182E9E2615C97E006D0F04 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182E9D2615C97E006D0F04 /* Value.swift */; };
 		C6182E9F2615C97E006D0F04 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182E9D2615C97E006D0F04 /* Value.swift */; };
-		C6182EAA261763B0006D0F04 /* NumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182EA9261763B0006D0F04 /* NumberField.swift */; };
-		C6182EAB261763B0006D0F04 /* NumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182EA9261763B0006D0F04 /* NumberField.swift */; };
 		C6182EB126176CD6006D0F04 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182EB026176CD6006D0F04 /* NumberPad.swift */; };
 		C6182EB226176CD6006D0F04 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182EB026176CD6006D0F04 /* NumberPad.swift */; };
 		C6182EB82617740F006D0F04 /* AddressField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182EB72617740F006D0F04 /* AddressField.swift */; };
 		C6182EB92617740F006D0F04 /* AddressField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182EB72617740F006D0F04 /* AddressField.swift */; };
+		C6182EBF26186D84006D0F04 /* HidingKeyboardLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182EBE26186D84006D0F04 /* HidingKeyboardLayer.swift */; };
+		C6182EC026186D84006D0F04 /* HidingKeyboardLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182EBE26186D84006D0F04 /* HidingKeyboardLayer.swift */; };
+		C6182ECB26186EB7006D0F04 /* AccountPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182ECA26186EB7006D0F04 /* AccountPicker.swift */; };
+		C6182ECC26186EB7006D0F04 /* AccountPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182ECA26186EB7006D0F04 /* AccountPicker.swift */; };
+		C6182ED026187043006D0F04 /* CurrencyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182ECF26187043006D0F04 /* CurrencyPicker.swift */; };
+		C6182ED126187043006D0F04 /* CurrencyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182ECF26187043006D0F04 /* CurrencyPicker.swift */; };
+		C6182ED526187160006D0F04 /* BigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182ED426187160006D0F04 /* BigButton.swift */; };
+		C6182ED626187160006D0F04 /* BigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182ED426187160006D0F04 /* BigButton.swift */; };
 		C62E4A4A25D6693300E60E02 /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E4A4925D6693300E60E02 /* AppNavigationView.swift */; };
 		C62E4A4B25D6693300E60E02 /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E4A4925D6693300E60E02 /* AppNavigationView.swift */; };
 		C62E4A5125D66AF300E60E02 /* AppSidebarNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E4A5025D66AF300E60E02 /* AppSidebarNavigationView.swift */; };
@@ -39,6 +45,16 @@
 		C62E4A6825D6D87000E60E02 /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E4A6625D6D87000E60E02 /* SendView.swift */; };
 		C62E4A6C25D6D87700E60E02 /* ReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E4A6B25D6D87700E60E02 /* ReceiveView.swift */; };
 		C62E4A6D25D6D87700E60E02 /* ReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E4A6B25D6D87700E60E02 /* ReceiveView.swift */; };
+		C64D82D3261ACB69009D2C9C /* HidingKeyboardBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D82D2261ACB69009D2C9C /* HidingKeyboardBar.swift */; };
+		C64D82D4261ACB69009D2C9C /* HidingKeyboardBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D82D2261ACB69009D2C9C /* HidingKeyboardBar.swift */; };
+		C64D82D8261BF84D009D2C9C /* ValueField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D82D7261BF84D009D2C9C /* ValueField.swift */; };
+		C64D82D9261BF84D009D2C9C /* ValueField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D82D7261BF84D009D2C9C /* ValueField.swift */; };
+		C64D82E1261E9487009D2C9C /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D82E0261E9487009D2C9C /* String+.swift */; };
+		C64D82E2261E9487009D2C9C /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D82E0261E9487009D2C9C /* String+.swift */; };
+		C64D82E6261F4F45009D2C9C /* CounterCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D82E5261F4F45009D2C9C /* CounterCurrencyView.swift */; };
+		C64D82E7261F4F45009D2C9C /* CounterCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D82E5261F4F45009D2C9C /* CounterCurrencyView.swift */; };
+		C64D82EB2621DDBF009D2C9C /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D82EA2621DDBF009D2C9C /* QRCodeScannerView.swift */; };
+		C64D82EC2621DDBF009D2C9C /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D82EA2621DDBF009D2C9C /* QRCodeScannerView.swift */; };
 		C663B5CB25DACDAF002E06A8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5CA25DACDAF002E06A8 /* AccountView.swift */; };
 		C663B5CC25DACDAF002E06A8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5CA25DACDAF002E06A8 /* AccountView.swift */; };
 		C663B5D925DACE56002E06A8 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5D825DACE56002E06A8 /* Wallet.swift */; };
@@ -69,15 +85,23 @@
 		C6182E932612BF12006D0F04 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		C6182E982612C061006D0F04 /* SlideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideBar.swift; sourceTree = "<group>"; };
 		C6182E9D2615C97E006D0F04 /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
-		C6182EA9261763B0006D0F04 /* NumberField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberField.swift; sourceTree = "<group>"; };
 		C6182EB026176CD6006D0F04 /* NumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
 		C6182EB72617740F006D0F04 /* AddressField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressField.swift; sourceTree = "<group>"; };
+		C6182EBE26186D84006D0F04 /* HidingKeyboardLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidingKeyboardLayer.swift; sourceTree = "<group>"; };
+		C6182ECA26186EB7006D0F04 /* AccountPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPicker.swift; sourceTree = "<group>"; };
+		C6182ECF26187043006D0F04 /* CurrencyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPicker.swift; sourceTree = "<group>"; };
+		C6182ED426187160006D0F04 /* BigButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButton.swift; sourceTree = "<group>"; };
 		C62E4A4925D6693300E60E02 /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; };
 		C62E4A5025D66AF300E60E02 /* AppSidebarNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSidebarNavigationView.swift; sourceTree = "<group>"; };
 		C62E4A5525D66AFD00E60E02 /* AppTabNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigationView.swift; sourceTree = "<group>"; };
 		C62E4A6125D6D68B00E60E02 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		C62E4A6625D6D87000E60E02 /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 		C62E4A6B25D6D87700E60E02 /* ReceiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveView.swift; sourceTree = "<group>"; };
+		C64D82D2261ACB69009D2C9C /* HidingKeyboardBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidingKeyboardBar.swift; sourceTree = "<group>"; };
+		C64D82D7261BF84D009D2C9C /* ValueField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueField.swift; sourceTree = "<group>"; };
+		C64D82E0261E9487009D2C9C /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		C64D82E5261F4F45009D2C9C /* CounterCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCurrencyView.swift; sourceTree = "<group>"; };
+		C64D82EA2621DDBF009D2C9C /* QRCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
 		C663B5CA25DACDAF002E06A8 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		C663B5D825DACE56002E06A8 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		C663B5DD25DACE5C002E06A8 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -129,6 +153,12 @@
 				C62E4A5C25D6951C00E60E02 /* Navigation */,
 				C6182E822611D061006D0F04 /* ValueView.swift */,
 				C6182E7D2611C9B5006D0F04 /* ValueInputView.swift */,
+				C6182EBE26186D84006D0F04 /* HidingKeyboardLayer.swift */,
+				C64D82D2261ACB69009D2C9C /* HidingKeyboardBar.swift */,
+				C6182ECA26186EB7006D0F04 /* AccountPicker.swift */,
+				C6182ECF26187043006D0F04 /* CurrencyPicker.swift */,
+				C64D82E5261F4F45009D2C9C /* CounterCurrencyView.swift */,
+				C6182ED426187160006D0F04 /* BigButton.swift */,
 				C663B5CF25DACE11002E06A8 /* Wallet */,
 				C663B5D225DACE17002E06A8 /* Send */,
 				C663B5D525DACE1C002E06A8 /* Receive */,
@@ -152,8 +182,8 @@
 		C663B5CF25DACE11002E06A8 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				C62E4A6125D6D68B00E60E02 /* WalletView.swift */,
 				C6182E752611958B006D0F04 /* AddAccountView.swift */,
+				C62E4A6125D6D68B00E60E02 /* WalletView.swift */,
 				C663B5CA25DACDAF002E06A8 /* AccountView.swift */,
 				C663B5FD25E17086002E06A8 /* TransactionView.swift */,
 			);
@@ -163,8 +193,9 @@
 		C663B5D225DACE17002E06A8 /* Send */ = {
 			isa = PBXGroup;
 			children = (
+				C64D82EA2621DDBF009D2C9C /* QRCodeScannerView.swift */,
 				C62E4A6625D6D87000E60E02 /* SendView.swift */,
-				C6182EA9261763B0006D0F04 /* NumberField.swift */,
+				C64D82D7261BF84D009D2C9C /* ValueField.swift */,
 				C6182EB026176CD6006D0F04 /* NumberPad.swift */,
 				C6182EB72617740F006D0F04 /* AddressField.swift */,
 				C6182E982612C061006D0F04 /* SlideBar.swift */,
@@ -184,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				C663B5F825E1313F002E06A8 /* UInt+.swift */,
+				C64D82E0261E9487009D2C9C /* String+.swift */,
 				C6182E8E2612B7B4006D0F04 /* View+.swift */,
 				C6182E932612BF12006D0F04 /* Color+.swift */,
 			);
@@ -340,26 +372,34 @@
 				C62E4A5625D66AFD00E60E02 /* AppTabNavigationView.swift in Sources */,
 				C663B5FE25E17086002E06A8 /* TransactionView.swift in Sources */,
 				C62E4A6C25D6D87700E60E02 /* ReceiveView.swift in Sources */,
-				C6182EAA261763B0006D0F04 /* NumberField.swift in Sources */,
 				C62E4A6225D6D68B00E60E02 /* WalletView.swift in Sources */,
 				C6182EB126176CD6006D0F04 /* NumberPad.swift in Sources */,
+				C6182ED526187160006D0F04 /* BigButton.swift in Sources */,
 				C62E4A6725D6D87000E60E02 /* SendView.swift in Sources */,
+				C64D82D3261ACB69009D2C9C /* HidingKeyboardBar.swift in Sources */,
+				C64D82E1261E9487009D2C9C /* String+.swift in Sources */,
 				C6182E942612BF12006D0F04 /* Color+.swift in Sources */,
+				C64D82D8261BF84D009D2C9C /* ValueField.swift in Sources */,
 				C6182E832611D061006D0F04 /* ValueView.swift in Sources */,
+				C6182ED026187043006D0F04 /* CurrencyPicker.swift in Sources */,
 				C6182E8F2612B7B4006D0F04 /* View+.swift in Sources */,
 				C663B5E825DFA3B3002E06A8 /* Blockchain.swift in Sources */,
+				C64D82E6261F4F45009D2C9C /* CounterCurrencyView.swift in Sources */,
 				C6182E762611958B006D0F04 /* AddAccountView.swift in Sources */,
 				C663B5CB25DACDAF002E06A8 /* AccountView.swift in Sources */,
 				C663B5DE25DACE5C002E06A8 /* Account.swift in Sources */,
 				C6182E992612C061006D0F04 /* SlideBar.swift in Sources */,
+				C6182ECB26186EB7006D0F04 /* AccountPicker.swift in Sources */,
 				C62E4A5125D66AF300E60E02 /* AppSidebarNavigationView.swift in Sources */,
 				C663B5F925E1313F002E06A8 /* UInt+.swift in Sources */,
 				C663B5D925DACE56002E06A8 /* Wallet.swift in Sources */,
 				C6F4221925CFD22D00884294 /* BarimWalletApp.swift in Sources */,
 				C6182EB82617740F006D0F04 /* AddressField.swift in Sources */,
+				C64D82EB2621DDBF009D2C9C /* QRCodeScannerView.swift in Sources */,
 				C6182E9E2615C97E006D0F04 /* Value.swift in Sources */,
 				C663B5EF25E0C9DE002E06A8 /* BitcoinCash.swift in Sources */,
 				C62E4A4A25D6693300E60E02 /* AppNavigationView.swift in Sources */,
+				C6182EBF26186D84006D0F04 /* HidingKeyboardLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,26 +412,34 @@
 				C663B5E425DD5C94002E06A8 /* Transaction.swift in Sources */,
 				C62E4A5725D66AFD00E60E02 /* AppTabNavigationView.swift in Sources */,
 				C663B5FF25E17086002E06A8 /* TransactionView.swift in Sources */,
-				C6182EAB261763B0006D0F04 /* NumberField.swift in Sources */,
 				C62E4A6D25D6D87700E60E02 /* ReceiveView.swift in Sources */,
 				C6182EB226176CD6006D0F04 /* NumberPad.swift in Sources */,
+				C6182ED626187160006D0F04 /* BigButton.swift in Sources */,
 				C62E4A6325D6D68B00E60E02 /* WalletView.swift in Sources */,
+				C64D82D4261ACB69009D2C9C /* HidingKeyboardBar.swift in Sources */,
+				C64D82E2261E9487009D2C9C /* String+.swift in Sources */,
 				C6182E952612BF12006D0F04 /* Color+.swift in Sources */,
+				C64D82D9261BF84D009D2C9C /* ValueField.swift in Sources */,
 				C6182E842611D061006D0F04 /* ValueView.swift in Sources */,
+				C6182ED126187043006D0F04 /* CurrencyPicker.swift in Sources */,
 				C6182E902612B7B4006D0F04 /* View+.swift in Sources */,
 				C62E4A6825D6D87000E60E02 /* SendView.swift in Sources */,
+				C64D82E7261F4F45009D2C9C /* CounterCurrencyView.swift in Sources */,
 				C663B5E925DFA3B3002E06A8 /* Blockchain.swift in Sources */,
 				C663B5CC25DACDAF002E06A8 /* AccountView.swift in Sources */,
 				C663B5DF25DACE5C002E06A8 /* Account.swift in Sources */,
 				C6182E9A2612C061006D0F04 /* SlideBar.swift in Sources */,
+				C6182ECC26186EB7006D0F04 /* AccountPicker.swift in Sources */,
 				C62E4A5225D66AF300E60E02 /* AppSidebarNavigationView.swift in Sources */,
 				C663B5FA25E1313F002E06A8 /* UInt+.swift in Sources */,
 				C663B5DA25DACE56002E06A8 /* Wallet.swift in Sources */,
 				C6F4221A25CFD22D00884294 /* BarimWalletApp.swift in Sources */,
 				C6182EB92617740F006D0F04 /* AddressField.swift in Sources */,
+				C64D82EC2621DDBF009D2C9C /* QRCodeScannerView.swift in Sources */,
 				C6182E9F2615C97E006D0F04 /* Value.swift in Sources */,
 				C663B5F025E0C9DE002E06A8 /* BitcoinCash.swift in Sources */,
 				C62E4A4B25D6693300E60E02 /* AppNavigationView.swift in Sources */,
+				C6182EC026186D84006D0F04 /* HidingKeyboardLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

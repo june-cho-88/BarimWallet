@@ -11,7 +11,8 @@ struct WalletView: View {
     let wallet: Wallet
     
     @State private var showBalance: Bool = true
-    @State private var showInSatoshi: Bool = false
+    @State private var selectedCurrency: Value.Representation = .bch
+    
     @State private var presentAddAcountView: Bool = false
     
     var body: some View {
@@ -19,7 +20,7 @@ struct WalletView: View {
             ForEach(wallet.accounts) {
                 WalletListRowView(account: $0,
                                   showBalance: $showBalance,
-                                  showInSatoshi: $showInSatoshi)
+                                  selectedCurrency: $selectedCurrency)
             }
         }
         .listStyle(DefaultListStyle())
@@ -28,15 +29,22 @@ struct WalletView: View {
                                 HStack {
                                     Button(action: { showBalance.toggle() }) {
                                         Image(systemName: (showBalance ? "eye.fill" : "eye"))
-                                    }.disabled(wallet.accounts.isEmpty)
-                                    Button(action: { showInSatoshi.toggle() }) {
-                                        Image(systemName: (showInSatoshi ? "s.circle" : "bitcoinsign.circle.fill"))
-                                    }.disabled(!showBalance).opacity(showBalance ? 1.0 : 0.0)
+                                    }
+                                    .disabled(wallet.accounts.isEmpty)
+                                    
+                                    Button(action: { selectedCurrency.toggle() }) {
+                                        Image(systemName: selectedCurrency.buttonImageName)
+                                    }
+                                    .disabled(!showBalance).opacity(showBalance ? 1.0 : 0.0)
                                 },
                             trailing:
                                 Button(action: { presentAddAcountView = true }) {
                                     Image(systemName: "plus")
-                                }.sheet(isPresented: $presentAddAcountView) { AddAccountView(presentAddAcountView: $presentAddAcountView) } )
+                                }
+                                .sheet(isPresented: $presentAddAcountView) {
+                                    AddAccountView(presentAddAcountView: $presentAddAcountView)
+                                }
+        )
     }
 }
 
@@ -44,19 +52,24 @@ struct WalletListRowView: View {
     let account: Account
     
     @Binding var showBalance: Bool
-    @Binding var showInSatoshi: Bool
+    @Binding var selectedCurrency: Value.Representation
     
     var body: some View {
         NavigationLink(destination: AccountView(account: account,
                                                 showBalance: $showBalance,
-                                                showInSatoshi: $showInSatoshi)) {
+                                                selectedCurrency: $selectedCurrency)) {
             HStack {
                 Text(account.name)
+                    //.font(.system(.title3))
+                if account.lock {
+                    Image(systemName: "lock.fill")
+                        .font(.system(.footnote))
+                        .foregroundColor(.accentColor)
+                }
                 Spacer()
-                ValueView(showInSatoshi: $showInSatoshi,
-                          direction: .vertical,
+                ValueView(direction: .vertical,
                           size: .small,
-                          balance: account.balance)
+                          value: .init(account.balance, representation: selectedCurrency))
                     .redacted(reason: showBalance ? .init() : .placeholder)
             }
         }

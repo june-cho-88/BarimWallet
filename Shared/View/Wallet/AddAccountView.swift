@@ -11,13 +11,7 @@ struct AddAccountView: View {
     @Binding var presentAddAcountView: Bool
     @State private var accountName: String = ""
     
-    private var cancelAction: () -> Void {
-        {
-            presentAddAcountView = false
-        }
-    }
-    
-    private var addAction: () -> Void {
+    private var addAccount: () -> Void {
         {
             guard !accountName.isEmpty  else { fatalError("Account name is empty") }
             presentAddAcountView = false
@@ -25,22 +19,30 @@ struct AddAccountView: View {
     }
     
     var body: some View {
-        VStack {
-            HStack {
-                Button(action: cancelAction) { Text("Cancel") }
-                Spacer()
-                Button(action: addAction) { Text("Add") }
-                    .disabled(accountName.isEmpty)
-            }.padding(.bottom)
-            
-            HStack {
+        List {
+            Section(header:
+                        HStack {
+                            Spacer()
+                            Button(action: { presentAddAcountView = false }) {
+                                Image(systemName: "chevron.compact.down")
+                                    .font(.system(.title))
+                                    .padding()
+                            }
+                            .buttonStyle(BorderlessButtonStyle())
+                            Spacer()
+                        },
+                    footer:
+                        BigButton(text: "Add",
+                                  height: 56,
+                                  action: addAccount)
+                        .disabled(accountName.isEmpty)
+                        .padding(.top)
+            ) {
                 TextField("Account Name", text: $accountName)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .foregroundColor(.blue)
+                    .foregroundColor(.accentColor)
                     .font(.largeTitle)
             }
-            Spacer()
         }
-        .padding()
+        .listStyle(GroupedListStyle())
     }
 }

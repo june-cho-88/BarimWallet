@@ -10,45 +10,57 @@ import Foundation
 struct Account: Identifiable, Hashable {
     let id: UUID = .init()
     let name: String
+    let lock: Bool
     let privateKeys: Set<UUID>
     let transactions: Set<Transaction>
+    
     var balance: UInt {
-        let totalValue: UInt = 123456789
-        
+        let totalValue: UInt = UInt.random(in: 1...9999999999)
         // TODO: Put this calculation to background
 //        DispatchQueue.main.async {
 //            for privateKey in privateKeys {
 //                totalValue += (BitcoinCash.shared.utxoSet.filter{$0.id==privateKey})[0].value
 //            }
 //        }
-        
         return totalValue
+    }
+    
+    func getBalance(in currency: Value.Representation) -> String {
+        return Value(balance, representation: currency).description
     }
 }
 
 extension Account {
-    static let samples: [Account] = [.init(name: "Test1",
+    static let samples: [Account] = [.init(name: "Personal",
+                                           lock: false,
                                            privateKeys: Account.pickRandomPrivateKeys(),
                                            transactions: .init()),
-                                     .init(name: "Test2",
+                                     .init(name: "Test Account 2",
+                                           lock: false,
                                            privateKeys: Account.pickRandomPrivateKeys(),
                                            transactions: .init()),
-                                     .init(name: "Test3",
+                                     .init(name: "Life Saving",
+                                           lock: true,
                                            privateKeys: Account.pickRandomPrivateKeys(),
                                            transactions: .init()),
-                                     .init(name: "Test4",
+                                     .init(name: "Saving for New Car",
+                                           lock: true,
                                            privateKeys: Account.pickRandomPrivateKeys(),
                                            transactions: .init()),
-                                     .init(name: "Test5",
+                                     .init(name: "Test Account 5",
+                                           lock: false,
                                            privateKeys: Account.pickRandomPrivateKeys(),
                                            transactions: .init()),
-                                     .init(name: "Test6",
+                                     .init(name: "Test Account 6",
+                                           lock: false,
                                            privateKeys: Account.pickRandomPrivateKeys(),
                                            transactions: .init()),
-                                     .init(name: "Test7",
+                                     .init(name: "Test Account 7",
+                                           lock: false,
                                            privateKeys: Account.pickRandomPrivateKeys(),
                                            transactions: .init()),
-                                     .init(name: "Test8",
+                                     .init(name: "Locked Account",
+                                           lock: true,
                                            privateKeys: Account.pickRandomPrivateKeys(),
                                            transactions: .init()),]
 }

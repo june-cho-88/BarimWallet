@@ -18,29 +18,32 @@ struct ReceiveView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             List {
-                Image(systemName: "qrcode")
-                    .foregroundColor(.primary)
-                    .font(.system(size: 300))
-                
-                Button(action: { UIPasteboard.general.string = "bitcoincash:" + address }) {
-                    VStack(alignment: .leading, spacing: 0) {
-                        Text("bitcoincash:")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.regular)
-                            .font(.system(.caption2, design: .monospaced))
-                        HStack(spacing: 0) {
-                            Text(address.prefix(addressHighlightenIndex))
-                                .foregroundColor(.primary)
-                                .fontWeight(.black)
-                            Text(address[address.index(address.startIndex, offsetBy: addressHighlightenIndex)..<address.index(address.endIndex, offsetBy: -addressHighlightenIndex)])
+                Section(header: Text("Address")) {
+                    Image(uiImage: QRCode(string: "bitcoincash:\(address)").uiImage)
+                        .interpolation(.none)
+                        .resizable()
+                        .scaledToFit()
+                    
+                    Button(action: { UIPasteboard.general.string = "bitcoincash:" + address }) {
+                        VStack(alignment: .leading, spacing: 0) {
+                            Text("bitcoincash:")
                                 .foregroundColor(.secondary)
-                                .fontWeight(.semibold)
-                            Text(address.suffix(addressHighlightenIndex))
-                                .foregroundColor(.primary)
-                                .fontWeight(.black)
+                                .fontWeight(.regular)
+                                .font(.system(.caption2, design: .monospaced))
+                            HStack(spacing: 0) {
+                                Text(address.prefix(addressHighlightenIndex))
+                                    .foregroundColor(.primary)
+                                    .fontWeight(.black)
+                                Text(address[address.index(address.startIndex, offsetBy: addressHighlightenIndex)..<address.index(address.endIndex, offsetBy: -addressHighlightenIndex)])
+                                    .foregroundColor(.secondary)
+                                    .fontWeight(.semibold)
+                                Text(address.suffix(addressHighlightenIndex))
+                                    .foregroundColor(.primary)
+                                    .fontWeight(.black)
+                            }
+                            .font(.system(.footnote, design: .monospaced))
+                            .lineLimit(1)
                         }
-                        .font(.system(.footnote, design: .monospaced))
-                        .lineLimit(1)
                     }
                 }
                 
@@ -63,8 +66,8 @@ struct ReceiveView: View {
             HidingKeyboardBar(keyboardIsUsing: $keyboardIsUsing)
         }
         .navigationBarItems(leading:
-                                Button(action: { self.value = .init(0) }) {
-                                    Image(systemName: "trash")
+                                Button(action: { self.value = .init(0, representation: self.value.representation) }) {
+                                    Image(systemName: "arrow.clockwise")
                                 }.disabled(self.value.satoshi == 0))
         .navigationTitle(Text("Receive"))
         .navigationBarTitleDisplayMode(.inline)

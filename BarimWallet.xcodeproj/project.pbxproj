@@ -71,6 +71,8 @@
 		C663B5FA25E1313F002E06A8 /* UInt+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5F825E1313F002E06A8 /* UInt+.swift */; };
 		C663B5FE25E17086002E06A8 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5FD25E17086002E06A8 /* TransactionView.swift */; };
 		C663B5FF25E17086002E06A8 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663B5FD25E17086002E06A8 /* TransactionView.swift */; };
+		C6CBDDED26353A850019EDB2 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CBDDEC26353A850019EDB2 /* QRCode.swift */; };
+		C6CBDDEE26353A850019EDB2 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CBDDEC26353A850019EDB2 /* QRCode.swift */; };
 		C6F4221925CFD22D00884294 /* BarimWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4220625CFD22D00884294 /* BarimWalletApp.swift */; };
 		C6F4221A25CFD22D00884294 /* BarimWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4220625CFD22D00884294 /* BarimWalletApp.swift */; };
 		C6F4221D25CFD22D00884294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F4220825CFD22D00884294 /* Assets.xcassets */; };
@@ -110,6 +112,7 @@
 		C663B5EE25E0C9DE002E06A8 /* BitcoinCash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinCash.swift; sourceTree = "<group>"; };
 		C663B5F825E1313F002E06A8 /* UInt+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt+.swift"; sourceTree = "<group>"; };
 		C663B5FD25E17086002E06A8 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		C6CBDDEC26353A850019EDB2 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		C6F4220625CFD22D00884294 /* BarimWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarimWalletApp.swift; sourceTree = "<group>"; };
 		C6F4220825CFD22D00884294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6F4220D25CFD22D00884294 /* BarimWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarimWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +178,7 @@
 				C663B5DD25DACE5C002E06A8 /* Account.swift */,
 				C663B5E225DD5C94002E06A8 /* Transaction.swift */,
 				C6182E9D2615C97E006D0F04 /* Value.swift */,
+				C6CBDDEC26353A850019EDB2 /* QRCode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,6 +376,7 @@
 				C62E4A5625D66AFD00E60E02 /* AppTabNavigationView.swift in Sources */,
 				C663B5FE25E17086002E06A8 /* TransactionView.swift in Sources */,
 				C62E4A6C25D6D87700E60E02 /* ReceiveView.swift in Sources */,
+				C6CBDDED26353A850019EDB2 /* QRCode.swift in Sources */,
 				C62E4A6225D6D68B00E60E02 /* WalletView.swift in Sources */,
 				C6182EB126176CD6006D0F04 /* NumberPad.swift in Sources */,
 				C6182ED526187160006D0F04 /* BigButton.swift in Sources */,
@@ -412,6 +417,7 @@
 				C663B5E425DD5C94002E06A8 /* Transaction.swift in Sources */,
 				C62E4A5725D66AFD00E60E02 /* AppTabNavigationView.swift in Sources */,
 				C663B5FF25E17086002E06A8 /* TransactionView.swift in Sources */,
+				C6CBDDEE26353A850019EDB2 /* QRCode.swift in Sources */,
 				C62E4A6D25D6D87700E60E02 /* ReceiveView.swift in Sources */,
 				C6182EB226176CD6006D0F04 /* NumberPad.swift in Sources */,
 				C6182ED626187160006D0F04 /* BigButton.swift in Sources */,

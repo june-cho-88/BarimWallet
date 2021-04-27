@@ -63,7 +63,7 @@ struct SendView: View {
         }
         .navigationBarItems(leading:
                                 Button(action: { self.value.displayNumber = ""; self.displayAddress = "" }) {
-                                    Image(systemName: "trash")
+                                    Image(systemName: "arrow.clockwise")
                                 }.disabled(self.value.displayNumber == "" && self.displayAddress == ""))
         .navigationTitle(Text("Send"))
         .navigationBarTitleDisplayMode(.inline)

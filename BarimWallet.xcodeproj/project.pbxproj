@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6091F7C263B94AC00A76355 /* AddressQRCodeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6091F7B263B94AC00A76355 /* AddressQRCodeLoader.swift */; };
+		C6091F7D263B94AC00A76355 /* AddressQRCodeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6091F7B263B94AC00A76355 /* AddressQRCodeLoader.swift */; };
+		C6091F7F263BA9BE00A76355 /* AddressQRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6091F7E263BA9BE00A76355 /* AddressQRCodeView.swift */; };
+		C6091F80263BA9BE00A76355 /* AddressQRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6091F7E263BA9BE00A76355 /* AddressQRCodeView.swift */; };
 		C6182E762611958B006D0F04 /* AddAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182E752611958B006D0F04 /* AddAccountView.swift */; };
 		C6182E772611958B006D0F04 /* AddAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182E752611958B006D0F04 /* AddAccountView.swift */; };
 		C6182E7E2611C9B5006D0F04 /* ValueInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182E7D2611C9B5006D0F04 /* ValueInputView.swift */; };
@@ -80,6 +84,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6091F7B263B94AC00A76355 /* AddressQRCodeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressQRCodeLoader.swift; sourceTree = "<group>"; };
+		C6091F7E263BA9BE00A76355 /* AddressQRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressQRCodeView.swift; sourceTree = "<group>"; };
 		C6182E752611958B006D0F04 /* AddAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountView.swift; sourceTree = "<group>"; };
 		C6182E7D2611C9B5006D0F04 /* ValueInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueInputView.swift; sourceTree = "<group>"; };
 		C6182E822611D061006D0F04 /* ValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueView.swift; sourceTree = "<group>"; };
@@ -179,6 +185,8 @@
 				C663B5E225DD5C94002E06A8 /* Transaction.swift */,
 				C6182E9D2615C97E006D0F04 /* Value.swift */,
 				C6CBDDEC26353A850019EDB2 /* QRCode.swift */,
+				C6091F7B263B94AC00A76355 /* AddressQRCodeLoader.swift */,
+				C6091F7E263BA9BE00A76355 /* AddressQRCodeView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,7 +326,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					C6F4220C25CFD22D00884294 = {
 						CreatedOnToolsVersion = 12.4;
@@ -388,11 +396,13 @@
 				C6182E832611D061006D0F04 /* ValueView.swift in Sources */,
 				C6182ED026187043006D0F04 /* CurrencyPicker.swift in Sources */,
 				C6182E8F2612B7B4006D0F04 /* View+.swift in Sources */,
+				C6091F7F263BA9BE00A76355 /* AddressQRCodeView.swift in Sources */,
 				C663B5E825DFA3B3002E06A8 /* Blockchain.swift in Sources */,
 				C64D82E6261F4F45009D2C9C /* CounterCurrencyView.swift in Sources */,
 				C6182E762611958B006D0F04 /* AddAccountView.swift in Sources */,
 				C663B5CB25DACDAF002E06A8 /* AccountView.swift in Sources */,
 				C663B5DE25DACE5C002E06A8 /* Account.swift in Sources */,
+				C6091F7C263B94AC00A76355 /* AddressQRCodeLoader.swift in Sources */,
 				C6182E992612C061006D0F04 /* SlideBar.swift in Sources */,
 				C6182ECB26186EB7006D0F04 /* AccountPicker.swift in Sources */,
 				C62E4A5125D66AF300E60E02 /* AppSidebarNavigationView.swift in Sources */,
@@ -429,11 +439,13 @@
 				C6182E842611D061006D0F04 /* ValueView.swift in Sources */,
 				C6182ED126187043006D0F04 /* CurrencyPicker.swift in Sources */,
 				C6182E902612B7B4006D0F04 /* View+.swift in Sources */,
+				C6091F80263BA9BE00A76355 /* AddressQRCodeView.swift in Sources */,
 				C62E4A6825D6D87000E60E02 /* SendView.swift in Sources */,
 				C64D82E7261F4F45009D2C9C /* CounterCurrencyView.swift in Sources */,
 				C663B5E925DFA3B3002E06A8 /* Blockchain.swift in Sources */,
 				C663B5CC25DACDAF002E06A8 /* AccountView.swift in Sources */,
 				C663B5DF25DACE5C002E06A8 /* Account.swift in Sources */,
+				C6091F7D263B94AC00A76355 /* AddressQRCodeLoader.swift in Sources */,
 				C6182E9A2612C061006D0F04 /* SlideBar.swift in Sources */,
 				C6182ECC26186EB7006D0F04 /* AccountPicker.swift in Sources */,
 				C62E4A5225D66AF300E60E02 /* AppSidebarNavigationView.swift in Sources */,
@@ -614,6 +626,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = J8VY3872TH;
@@ -638,6 +651,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = J8VY3872TH;

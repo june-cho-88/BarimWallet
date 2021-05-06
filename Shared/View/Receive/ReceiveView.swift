@@ -19,11 +19,6 @@ struct ReceiveView: View {
         ZStack(alignment: .bottom) {
             List {
                 Section(header: Text("Address")) {
-                    Image(uiImage: QRCode(string: "bitcoincash:\(address)").uiImage)
-                        .interpolation(.none)
-                        .resizable()
-                        .scaledToFit()
-                    
                     Button(action: { UIPasteboard.general.string = "bitcoincash:" + address }) {
                         VStack(alignment: .leading, spacing: 0) {
                             Text("bitcoincash:")
@@ -45,6 +40,9 @@ struct ReceiveView: View {
                             .lineLimit(1)
                         }
                     }
+                    
+                    AddressQRCodeView(address: address,
+                                      placeholder: ProgressView())
                 }
                 
                 Section(header: Text("How Much")) {

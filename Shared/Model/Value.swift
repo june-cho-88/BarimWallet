@@ -127,7 +127,7 @@ extension Value {
         var rate: Double {
             switch self {
             case .usd: return 0.0
-            case .krw: return 750_000.0
+            case .krw: return 1_700_000.0
             }
         }
         
